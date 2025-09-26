@@ -3,3 +3,8 @@
     > Code Walkthrough
     > attributes get called itself, methods are called manually
 3. Why Pythod is called OOP? - Everything in python is a bject(data structure , data type etc)
+4. Advantages of Oops concept
+    > We can create our own data types
+    > code reusability
+    > debugging
+    > easy to colab
