@@ -1,0 +1,5 @@
+1. Class and Object (Example)
+2. Class has data/attribute and func/methods
+    > Code Walkthrough
+    > attributes get called itself, methods are called manually
+3. Why Pythod is called OOP? - Everything in python is a bject(data structure , data type etc)
