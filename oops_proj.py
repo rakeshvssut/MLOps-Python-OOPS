@@ -11,15 +11,17 @@ class chatbook:
                            2. Press 2 to Signin
                            3. Press 3 to write a post
                            4. Press 4 to Message a friend
-                           5. Press any other key to exit""")
+                           5. Press any other key to exit
+                           
+                           -> """)
         if user_input == "1":
             self.signup()
         elif user_input == "2":
             self.signin()
         elif user_input == "3":
-            self.postmessage()
+            self.my_post()
         elif user_input == "4":
-            pass
+            self.send_msg()
         else:
             exit()
 
@@ -41,21 +43,30 @@ class chatbook:
             if self.username == uname and self.password == pwd:
                 print("You have signed in successfully")
                 self.loggedin = True
-                print("Sign in done")
             else:
                 print("Please enter correct credentials")
         print("\n")
-        print("Sign in part 2 done")
         self.menu()
 
-    # def postmessage(self):
-    #     print("\n")
-    #     inp = input("Hi type your good name here : ")
-    #     print(f"{inp} nice to meet you")
-    #     print("\n")
-    #     self.menu
+    def my_post(self):
+        if self.loggedin == True:
+            txt = input("Enter your message here : ")
+            print(f"Following content has been posted : {txt}")
+        else:
+            print("You need to signin 1st to post something")
+        print("\n")
+        self.menu()
 
-    # def msgtofrnd():
+    def send_msg(self):
+        if self.loggedin == True:
+            txt = input("Enter your message here to friend : ")
+            frnd = input("Whom to send this message : ")
+            print(f"Following message has been sent : {txt} to {frnd}")
+        else:
+            print("You need to signin 1st to post something")
+        print("\n")
+        self.menu()
 
 
-obj = chatbook()
+# user1 = chatbook()
+# # user 1 is a object
