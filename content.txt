@@ -15,6 +15,13 @@
     > self
     > You can create attribute outside class as well
 
-    > encapsulation # Hiding the attribute
+    > encapsulation # Hiding the attribute 
     > getter and setter
     > static method
+
+6. Inheritance
+    > Inheritance code example
+    > Why Inheritance is needed ? (Code reusability, parent has no access to child class)
+    > What gets inherited? (Constructor, Non private attribute, Non Private Methods)
+    > Constructor overloading and method overloading
+    > Super keyword(It can be use only inside the class, Cannot access varriables/attributes, used only inside child class)
